@@ -1,114 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bubble Blast - Sabor Verde</title>
-  <style>
-    body {
-      font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
-      text-align: center;
-      background: linear-gradient(135deg, #a8e6cf, #dcedc1, #ffd3b6, #ffaaa5);
-      background-size: 400% 400%;
-      animation: gradientBG 12s ease infinite;
-      color: #333;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Blast Morado</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+            background: linear-gradient(135deg, #ff9ff3, #48dbfb);
+            background-size: 200% 200%;
+            animation: gradientBG 8s ease infinite;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
 
-    @keyframes gradientBG {
-      0% {background-position: 0% 50%;}
-      50% {background-position: 100% 50%;}
-      100% {background-position: 0% 50%;}
-    }
+        @keyframes gradientBG {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
 
-    .container {
-      max-width: 600px;
-      margin: 50px auto;
-      background-color: rgba(255, 255, 255, 0.9);
-      padding: 30px;
-      border-radius: 20px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-    }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
 
-    .container h1 {
-      color: #1dd1a1;
-      font-size: 2.5em;
-      text-shadow: 1px 1px 4px white;
-    }
+        img {
+            max-width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            margin-bottom: 20px;
+        }
 
-    .container img {
-      width: 100%;
-      max-width: 300px;
-      border-radius: 15px;
-      margin-top: 20px;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
-    }
+        .caracteristicas {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 600px;
+        }
 
-    .caracteristicas {
-      margin-top: 20px;
-      text-align: left;
-      padding: 0 20px;
-    }
+        .caracteristicas h2 {
+            color: #feca57;
+            font-size: 1.8em;
+            margin-top: 0;
+        }
 
-    .caracteristicas h2 {
-      color: #ff6347;
-      border-bottom: 2px solid #ff6347;
-      padding-bottom: 5px;
-    }
+        .caracteristicas p {
+            line-height: 1.6;
+        }
 
-    .caracteristicas ul {
-      list-style-type: none;
-      padding: 0;
-    }
+        a {
+            color: #ffffff;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease;
+        }
 
-    .caracteristicas li {
-      background: #eef;
-      margin-bottom: 10px;
-      padding: 10px;
-      border-radius: 8px;
-    }
-
-    .precio {
-      font-size: 2em;
-      color: #00bfff;
-      margin-top: 20px;
-      font-weight: bold;
-    }
-
-    .volver {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 10px 20px;
-      background: #48dbfb;
-      color: white;
-      text-decoration: none;
-      border-radius: 25px;
-      transition: background 0.3s;
-    }
-
-    .volver:hover {
-      background: #00bfff;
-    }
-  </style>
+        a:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Bubble Blast - Sabor Uva</h1>
-    <img src="https://lh3.googleusercontent.com/rd-gg-dl/AJfQ9KQbtshl5Uz0GuAXXyZsoLbQpEIrYQHl-55WNNM-hrZ16mRCI30n-mrCJwRRtNf_DXxJhAn2Cxtu8zxR7ZtMSZGPZJxK2wOEj9tDaGh1hAKcOnl4G6IzDcC64_TwEQKw_FISf9Ys06WZFxTeztD9W4ExLBV8MJAuYRD8Hfo79XTYZn4PYjJZOLSARTvXAobDTZ_F8YTLuklsKBBbWdgxeWtDaKov4y8fYRQiLntOpzSSpc5HoktWXThSxTPzTGY2zc3qMKUZ3n9Woe7s756XH0bMnXSpIKIs8ZOS1_65umlqNOl52W0_P6bK1Ailveoz7uYVgKAjen0YgvsthYaFmxt_mNZpLgR3sSQGArivTaH1dZjyTLbA4_5XPkIwKUM180PmTZY6Hu7ma9kcRE_kDJp0ZgNUmC_szRkWzSrw3DrtHPBSW1H4Endw7tQI-CKth4mfsjdKztzZZbrvacF7ywnK5xEU1hmkZXi3wFS9F7Quwudua95wQKxbBmIacuidNDTCLhfT-xH5njripIZ6ZIqrzXDzMfH6EwEHYf20NRd0H9SaA-jxVPpWCFApdw92Rmeoi7TpevkWeLSykTA8kuTWG8wDTOTJlQRrRvcMcorbA7rkp8bS5ZmTRNFfuo2GZ3OGbHs0TXWWJ1puv2vIM-hcylTSUxaCwUSqUNz7wuRGFYqxg-1hBkwnvxLrxmKycUFflu_8fmV6CDfMF-2yqphaJ284LLhp4dCCdIsz7oIvfPFKTO5uStcr0lEnx-VzRlNN-3eMgNVFk1BGe0HcqGc8reuY7UJvwQYir7pCeaKFE_raeMG3ESnbGIIFWTVbKUbLun_9lwyhleN7gFP5NXdEUcXS1-N5ureV3t4J9j8ki-lFT0bSwgihuFDGB-h_Kcj1ILsOR5ugVQsKHK1JsWMlYfHNo4cy6HfafDCd5ofz9Vvt1KubUWov_sdqsmYWd-0kywc3ut6YrKxTB9qYXQSEp3KREX_UoagDeORYFQ2ek4MH81wL_1_20fAca2HInESohZzwdMkrHBTFS55YyC7A756aafo9cftO5zycbF7oqbxcaiIYwB7xJWkuOEF4K_fYD5wf9jfJJA_2F2aUGLT35PYdHvUxLwJFSssNTG4t4oRVU9ZFsBQLUcGB3JrcYPCtvB1PqSOp-9_xmblXXdhno1miSQlyzxWcK-vrqbt2a-kMj3MfTPnE37MHTpM8zFgU3prK8VrBkml2bUbjGwRRZGTiKQbyxPlhJXRuYQACrJjNmEkgSGe8ybUp-7zA7N7ZK2wS4oJ4S81Wr-BNZtP5jRdDAswwkwPjng-XcsCtx_-y5QTbRvHGYb0N6FonaDKtL7KVAT0nypc60wg8bAmpLe3eKU3AMWna9g5xgu-Fr-kQ3rbRn7-6IQL14eAN3SUz_HiF67pFMNdsXFNQBNrq=s512" alt="Bubble Blast Morado">
-    
+    <h1>Bubble Blast Morado</h1>
+    <img src="MORADO.png" alt="Bubble Blast Morado">
     <div class="caracteristicas">
-      <h2>Características del Producto</h2>
-      <ul>
-        <li>Sabor: MORA</li>
-        <li>Contenido: 400 ml</li>
-        <li>Burbujas: Explosivas y refrescantes</li>
-        <li>Presentación: Envase de plástico reciclable</li>
-      </ul>
+        <h2>Fantasía de Sabor</h2>
+        <p>Embárcate en un viaje de sabor mágico con el Bubble Blast Morado. Una combinación exquisita que deleitará tu paladar con cada burbuja.</p>
+        <h2>Un Toque de Magia</h2>
+        <p>Perfecto para esos momentos en los que necesitas un toque de fantasía y sabor. Bubble Blast Morado, el elixir de la felicidad.</p>
     </div>
-    
-    <div class="precio">
-      Precio: $4000 COP
-    </div>
-
-    <a href="index.html" class="volver">Volver a la Galería</a>
-  </div>
+    <a href="index.html">Volver a la Galería</a>
 </body>
+</html>
