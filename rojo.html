@@ -1,115 +1,85 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bubble Blast - Sabor Rojo</title>
-  <style>
-    body {
-      font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
-      text-align: center;
-      background: linear-gradient(135deg, #a8e6cf, #dcedc1, #ffd3b6, #ffaaa5);
-      background-size: 400% 400%;
-      animation: gradientBG 12s ease infinite;
-      color: #333;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Blast Rojo</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+            background: linear-gradient(135deg, #ff6347, #feca57);
+            background-size: 200% 200%;
+            animation: gradientBG 8s ease infinite;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
 
-    @keyframes gradientBG {
-      0% {background-position: 0% 50%;}
-      50% {background-position: 100% 50%;}
-      100% {background-position: 0% 50%;}
-    }
+        @keyframes gradientBG {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
 
-    .container {
-      max-width: 600px;
-      margin: 50px auto;
-      background-color: rgba(255, 255, 255, 0.9);
-      padding: 30px;
-      border-radius: 20px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-    }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
 
-    .container h1 {
-      color: #1dd1a1;
-      font-size: 2.5em;
-      text-shadow: 1px 1px 4px white;
-    }
+        img {
+            max-width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            margin-bottom: 20px;
+        }
 
-    .container img {
-      width: 100%;
-      max-width: 300px;
-      border-radius: 15px;
-      margin-top: 20px;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
-    }
+        .caracteristicas {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 600px;
+        }
 
-    .caracteristicas {
-      margin-top: 20px;
-      text-align: left;
-      padding: 0 20px;
-    }
+        .caracteristicas h2 {
+            color: #48dbfb;
+            font-size: 1.8em;
+            margin-top: 0;
+        }
 
-    .caracteristicas h2 {
-      color: #ff6347;
-      border-bottom: 2px solid #ff6347;
-      padding-bottom: 5px;
-    }
+        .caracteristicas p {
+            line-height: 1.6;
+        }
 
-    .caracteristicas ul {
-      list-style-type: none;
-      padding: 0;
-    }
+        a {
+            color: #ffffff;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease;
+        }
 
-    .caracteristicas li {
-      background: #eef;
-      margin-bottom: 10px;
-      padding: 10px;
-      border-radius: 8px;
-    }
-
-    .precio {
-      font-size: 2em;
-      color: #00bfff;
-      margin-top: 20px;
-      font-weight: bold;
-    }
-
-    .volver {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 10px 20px;
-      background: #48dbfb;
-      color: white;
-      text-decoration: none;
-      border-radius: 25px;
-      transition: background 0.3s;
-    }
-
-    .volver:hover {
-      background: #00bfff;
-    }
-  </style>
+        a:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Bubble Blast - Sabor Rojo</h1>
-    <img src="https://lh3.googleusercontent.com/rd-gg-dl/AJfQ9KQ98uvQBb2syCusWAP8QZovtFCuKyCeuDeMvezZr7Q5FK98LLsXP_IvwnPI73czAwSrD6jrSHl-rS8u0_Cma9bCGP0G__paR0OdqS8pGRSnNH7qJ_m-tlQwsLq7i0nU4ZREmZP_KgecI6bIps6MUjDEEr9rZYdVZ1nB4O7UYyWzN9nus5d_iEDlrfLGeHpt4LCpMaYfCDrzsK-CAxNtNd4rMULSMoJ2_HvycGnQbGAB5ir3QmUnGepqqGechIwj_ICEOmeQLR-gl3T8202O6wj1eYNE4D35lDKOmydNTiK-Ge9fokrJzW4qSnf7tnDaBjL9AyBJNPG7sKenWQtPCs_pBXsXqdLC0Ctf6qM00tXnQcviwmfVjbbznNgSXMthBm43Re0zCcZg7h4a6QLrPH9pQ6VvaZgP2KWW7Qi8xwEk7BFH3LujtcA3JRH-YE2B3_1gvp26tKGVuEU9NsuovTUDKd2CVwEoXnP3ukI-DmiVy7SWsQiyMDtjpHtiqPnLhDznZ9zZaK7SqfMruDQdYRNB7dM-q_YzGubmA0LmifBUlxdnFCZrJRpM3GeX1_yTMdqnLMG4x-JQHWcD_k851-9Hny1he6NCw7Nu1Eez8pcoC22Iy6--u59Tbh-0BMOjeu8AYs9672fnbmtLtG9D0kB9_hEPOVVR_ujj4oxmMLO72vCvjDDhJZBkc04ao_4YwZ7AGXbYSr0xkAsnVUG5VLsxrMzdpzhCzXBDYh4uSQEc8dRlE-7i5X9a2P09lq6lHglC1BmJX1Oen1sXd3sADm8ugAbRVWokOHdYHUndYJnlE4cxm3l-jz8BJWNHc94iv7Ol4wGPAF4JrFGS9zbKfKPzzcUCfi8t4_IEOnCJRyvFjp2DzZycAuHkIbead3q1ORLrrnDMa07moOZcUGzqIO907MLOp0-WgXW4A4mEex6TF5KhQgutYerLXgGGwFfWGeauCvRv3LuwMr4CzTyvF8p1AwyXosVOKcGxnYMD0AJcH9lGUDQKoi5les2_LtImx1H-_cKlo2bqPeNZk7BZG7OIXczCYysvfDz0SHu5PrAhuWPPpL3jaYBG7VG4Bvjh-37_FyltEsL_byO6yrIQJCBC-txrfym04vlLbsuIgV6gdIwJoP2Lxy3hZSJ4lhpnPXwLiLSxIuC9KcokJPD0nN-RnIR84L2RljGwKocTjEyeeKkDVbC1PPPGYc-XOo7JuhYUWWxtIJjClXvvtiXTxxZlBIUvg1Myd1MdCkZXmmdTvMQGhKmvUDksxH38oD2-kUjuPGxJjlRC-ExpuPTmrMt9_auM9hTxR2PFbbzQEWtXs8FYdlazaD_C-yzBY0R24FxZbkuJEspV35A_rOR9pJ8YevUcAJ5Lc42GGKC1TmofTUoGhnJ2-3YZBVVLl-pTDooLQDK9IpN1KbB_pdbetpc=s512" alt="Bubble Blast Rojo">
-    
+    <h1>Bubble Blast Rojo</h1>
+    <img src="Roja.png" alt="Bubble Blast Rojo">
     <div class="caracteristicas">
-      <h2>Características del Producto</h2>
-      <ul>
-        <li>Sabor: Fresa y frutos rojos</li>
-        <li>Contenido: 400 ml</li>
-        <li>Burbujas: Explosivas y refrescantes</li>
-        <li>Presentación: Envase de plástico reciclable</li>
-      </ul>
+        <h2>Pasión Frutal</h2>
+        <p>Déjate seducir por el intenso sabor a frutos rojos del Bubble Blast Rojo. Una explosión dulce y ligeramente ácida que despertará tus sentidos en cada burbuja.</p>
+        <h2>Energía Vibrante</h2>
+        <p>Con un toque revitalizante, es la bebida perfecta para acompañar tus momentos más activos o simplemente para darte un capricho lleno de sabor.</p>
+        <h2>¡El Sabor que Enamora!</h2>
+        <p>Cada sorbo es una experiencia deliciosa. Bubble Blast Rojo, la chispa de la fruta en cada burbuja.</p>
     </div>
-    
-    <div class="precio">
-      Precio: $4000 COP
-    </div>
-
-    <a href="index.html" class="volver">Volver a la Galería</a>
-  </div>
+    <a href="index.html">Volver a la Galería</a>
 </body>
 </html>
