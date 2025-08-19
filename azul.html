@@ -1,115 +1,85 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bubble Blast - Sabor Azul</title>
-  <style>
-    body {
-      font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
-      text-align: center;
-      background: linear-gradient(135deg, #a8e6cf, #dcedc1, #ffd3b6, #ffaaa5);
-      background-size: 400% 400%;
-      animation: gradientBG 12s ease infinite;
-      color: #333;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Blast Azul</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+            background: linear-gradient(135deg, #48dbfb, #1dd1a1);
+            background-size: 200% 200%;
+            animation: gradientBG 8s ease infinite;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
 
-    @keyframes gradientBG {
-      0% {background-position: 0% 50%;}
-      50% {background-position: 100% 50%;}
-      100% {background-position: 0% 50%;}
-    }
+        @keyframes gradientBG {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
 
-    .container {
-      max-width: 600px;
-      margin: 50px auto;
-      background-color: rgba(255, 255, 255, 0.9);
-      padding: 30px;
-      border-radius: 20px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-    }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
 
-    .container h1 {
-      color: #1dd1a1;
-      font-size: 2.5em;
-      text-shadow: 1px 1px 4px white;
-    }
+        img {
+            max-width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            margin-bottom: 20px;
+        }
 
-    .container img {
-      width: 100%;
-      max-width: 300px;
-      border-radius: 15px;
-      margin-top: 20px;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
-    }
+        .caracteristicas {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 600px;
+        }
 
-    .caracteristicas {
-      margin-top: 20px;
-      text-align: left;
-      padding: 0 20px;
-    }
+        .caracteristicas h2 {
+            color: #feca57;
+            font-size: 1.8em;
+            margin-top: 0;
+        }
 
-    .caracteristicas h2 {
-      color: #ff6347;
-      border-bottom: 2px solid #ff6347;
-      padding-bottom: 5px;
-    }
+        .caracteristicas p {
+            line-height: 1.6;
+        }
 
-    .caracteristicas ul {
-      list-style-type: none;
-      padding: 0;
-    }
+        a {
+            color: #ffffff;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease;
+        }
 
-    .caracteristicas li {
-      background: #eef;
-      margin-bottom: 10px;
-      padding: 10px;
-      border-radius: 8px;
-    }
-
-    .precio {
-      font-size: 2em;
-      color: #00bfff;
-      margin-top: 20px;
-      font-weight: bold;
-    }
-
-    .volver {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 10px 20px;
-      background: #48dbfb;
-      color: white;
-      text-decoration: none;
-      border-radius: 25px;
-      transition: background 0.3s;
-    }
-
-    .volver:hover {
-      background: #00bfff;
-    }
-  </style>
+        a:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Bubble Blast - Sabor Azul</h1>
-    <img src="https://lh3.googleusercontent.com/rd-gg-dl/AJfQ9KTqyJSft26INS41USQAHcE9AyWRhZvqCGjJlybJ4ExpRmINHkwOQsk7e_tOhRWh0F6xg0gGrAY8eBYg9NVS80sZs7TIEx6vMhFVVm6cqCK0YSw6mRuL3psHKqCmhS9Rczf-0D1wecGPIUSsDCS2fpz5G-KM2r683R2kWP87lVPSAIDpToxd2QXSF4grdp-nnibRAetdYijCEMO7OYT1Dbub_vtjKrnVUcZeUbnbMxZIGeFI8_fSDozIBXequ3fgxdazyP2Km15IOY_WkEgjOE5xE-cNEfkkr4HlltIBtlwcPGXEtRMaRF01u05T5ZXSNFMtnGfyw3HxXID5D7S4NlsokDtB3YWcaAi7YudaqEzux394l7d528aJP77ouU5njiTCvCf8nsIdYgP2er35UbjW7KXf_MYH6LJCFvVBdtHVoE2ikETc3hlTwTZvD-ZxPRk1tC-QXJa4Y-wIUiVgbDC4Bzt4T0oSnhpauH5lqdKz8bYYGuwTrqwR9goggCaCWRkgK8TZHKi6O9rBdSKJrRlixhWL-J5LF9lzOK1Jxn1uT1MjIENxcolSOPAonMWYdyaxbcNSG4zkw921XgujGT20pPxN_p43l8hwfa1-VKaS9HX0fNr1N275FUzDSfWddW1mmFLnPlYaQ0v_ZCEcnz5ia5TRJvETjRNM71Fqk2egzrRwUsdSAoANmob52dymQIkhHDKrCjlVwwHWQR-W0qqdDiWye9eOeH5_kf2MyDDjRIZ6QQcgfZmtZejj3OXCyLNmtO4SJ_jJypKAlw8wGruzt04EwyFiEnCUAm60dAgb8yhGf5tr4tq87xMvlovlhWmjOK2eFh5hs_ctVTm9tBHD5q-qo9BINjZ7Dst75OABpWqLrYMg5xrowy1LN2z3v6n03Uq55kgWOvdW6vEAJbLH4o7lJsnUVlZ5_0M69OPz__JM3OO3fV9KSJtDGzfjZnc8i3vX3FyUZddfW-mVXSDI1amXqpA3ZcFQe_9Jr1ATRFGvI77XbUW3rA7FOR7EMsRBpctEcQ88L-5bEfVCz8FnhDmIZlfcvFpERy0T0qE65XdXfZbUqK5Vi9ib_K2qOQhQWzY0CN6zL3orcuPQUXi6gGMhha_q8Ve3yqSyMtS1s7psM9ZB_3uwyYZnvK07qLaFjlfwa7_YRncz1tiGNKB0_KT0zeRU5H4GXvbbVr0ndDfgbeM2vAx1ZIb780D_cA7dDbXXcLjxf9ASM3loYX3GXl0_2BVKnkrdYFfP8EBlBCxCyf0EAw3dWFzw06Tmqq9vFvfrYNu8GrATxCQUay8rvVzyOMUWyG9eJojSt_o3y6V-b00SUDSRbbNkrtrzM9QDp7QcqS6FxGJn-D9YbAI1FadZ3Ifr56-et6tRhTJcTR9jp5kWah-ZzzQj_tB8SVVHQeaJs_rCSGgiUVxTerQ=s512" alt="Bubble Blast Azul">
-    
+    <h1>Bubble Blast Azul</h1>
+    <img src="Azul.png" alt="Bubble Blast Azul">
     <div class="caracteristicas">
-      <h2>Características del Producto</h2>
-      <ul>
-        <li>Sabor:azul cielo y arándanos</li>
-        <li>Contenido: 400 ml</li>
-        <li>Burbujas: Explosivas y refrescantes</li>
-        <li>Presentación: Envase de plástico reciclable</li>
-      </ul>
+        <h2>Misterio Refrescante</h2>
+        <p>Sumérgete en la frescura enigmática del Bubble Blast Azul. Un sabor único y sorprendente que te dejará con ganas de descubrir más en cada burbuja.</p>
+        <h2>Aventura Burbujeante</h2>
+        <p>Ideal para los espíritus aventureros que buscan nuevas sensaciones. Bubble Blast Azul es la chispa de misterio en tu día.</p>
+        <h2>¡El Secreto del Sabor!</h2>
+        <p>Desvela el sabor único de Bubble Blast Azul. Una experiencia refrescante llena de sorpresas.</p>
     </div>
-    
-    <div class="precio">
-      Precio: $4000 COP
-    </div>
-
-    <a href="index.html" class="volver">Volver a la Galería</a>
-  </div>
+    <a href="index.html">Volver a la Galería</a>
 </body>
 </html>
